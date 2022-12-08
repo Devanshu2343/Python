@@ -1,0 +1,12 @@
+class NumberGreaterThan10(Exception):
+    def __init__(self,message):
+        self.message=message
+
+class Number:
+    try:
+        a=int(input("enter number: "))
+        if a>10:
+           raise NumberGreaterThan10("NumberGreaterThan10")
+           print(a)
+    except NumberGreaterThan10 as err :
+          print("exception raised :", err.message)
