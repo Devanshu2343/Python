@@ -1,0 +1,6 @@
+try:
+    a=int(input("enter a number: "))
+except:
+    print("error occured")
+finally:
+    print("Done")
